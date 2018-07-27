@@ -1,13 +1,11 @@
 import datetime
 import json
 import math
-
-from backend.DB.api import app, db
-from flask import request
 import unittest
 
+from backend.DB.api import app, db
+
 from backend.DB.api import routes, tables
-from backend.DB.api.tables import Reward
 
 
 token = "?token=TEST"
