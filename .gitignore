@@ -4,3 +4,4 @@
 better_together_db.sqlite3
 bettertogether.sh
 .idea/
+__pycache__/
