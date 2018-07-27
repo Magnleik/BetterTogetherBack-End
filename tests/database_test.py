@@ -13,10 +13,10 @@ token = "?token=TEST"
 
 class DatabaseTester(unittest.TestCase):
 
-
     def setUp(self):
         # Create a new database for each test
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
+        app.config['SECRET_KEY'] = 'TEST'
         app.config['TESTING'] = True
         self.app = app.test_client()
         db.create_all()
